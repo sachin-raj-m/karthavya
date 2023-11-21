@@ -47,9 +47,9 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          <li><a class="nav-link scrollto" href="speaker-details.html">Speakers</a></li>
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
             <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
@@ -86,10 +86,46 @@
       <h2 class="mb-4 pb-0"><span>48 - Hour National Level Hackathon</span></h2>
       <h4 class="mb-4 pb-0">on<br>Safe & Scientific <br>Solid Waste Management</h4>
       <p class="mb-4 pb-0">1 - 3 December, Jyothi Engineering College, Thrissur</p>
+      
+      <h1 id="countdown"></h1>
+
+      <script>
+          // Set the date of the hackathon
+          const hackathonDate = new Date('December 3, 2023 00:00:00').getTime();
+
+          // Update the countdown every second
+          const countdown = setInterval(() => {
+              // Get the current date and time
+              const now = new Date().getTime();
+
+              // Calculate the time remaining in milliseconds
+              const timeRemaining = hackathonDate - now;
+
+              // Calculate days, hours, minutes, and seconds
+              const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+              // Display the countdown
+              document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+              // If the hackathon has started, display a message
+              if (timeRemaining < 0) {
+                  clearInterval(countdown);
+                  document.getElementById('countdown').innerHTML = 'The hackathon has started!';
+              }
+          }, 1000);
+      </script>
       <a href="" class="glightbox play-btn mb-4"></a>
       <a href="#about" class="about-btn scrollto">About The Event</a>
+      <div class="apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG" data-button-theme="light"style="height: 44px; width: 312px"></div>
+      <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+  
+  <!-- End Hero Section -->
+  
 
   <main id="main">
 
@@ -97,7 +133,7 @@
     <section id="about">
       <div class="container position-relative" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <h2>About The Event</h2>
             <p>Are you ready to innovate and drive positive change in the field of waste management? Our hackathon is your opportunity to be part of the solution to one of the world's most pressing environmental challenges. Join us in a collaborative journey to revolutionize how we handle and reduce solid waste, making a significant impact on the planet.
               Solid waste management is a critical global issue, and your ideas can make a difference. The Solid Waste Management Hackathon is a gathering of creative minds, passionate innovators, and sustainability advocates. Together, we will tackle the complex challenges associated with waste generation, disposal, recycling, and sustainability.
@@ -113,10 +149,206 @@
           <div class="col-lg-3">
             <h3>When</h3>
             <p>Friday To Sunday<br>1st - 3rd December</p>
+          </div> -->
+
+          <!-- About Start -->
+          <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn d-flex align-items-center justify-content-center" data-wow-delay="0.1s">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="img-fluid rounded w-75 mx-auto" src="images\istockphoto-1253713039-612x612.jpg" alt="">
+                            <!-- <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="images\waste-mgmt.jpg" alt="" style="margin-top: -25%;"> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="d-inline-block border rounded-pill py-1 px-4">About The Event</p>
+                        <h1 class="mb-4">Join the Movement for a Greener Tomorrow!</h1>
+                        <p>Are you ready to be a changemaker and lead the way in revolutionizing solid waste management? This is your chance to make a real impact on the world's environmental challenges. Be part of our innovative hackathon and contribute to the vision of making Kerala the cleanest state in the country!</p>
+                        <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Event Highlights -->
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+              <!-- <p class="d-inline-block border rounded-pill py-1 px-4">Services</p> -->
+              <h1 style="color: white;">Event Highlights</h1>
           </div>
+          <div class="row g-4">
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="service-item bg-light rounded h-100 p-5">
+                      <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                        <img src="images\rocket icon.png" alt="Rocket" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                      </div>
+                      <h4 class="mb-3">Innovate for Impact</h4>
+                      <p class="mb-4">
+                        <ul style="color: black;">
+                            <li>Address real-world challenges in waste generation, disposal, recycling, and sustainability.</li>
+                            <li>Contribute to the "Litter Free Kerala" Campaign under Navakeralam Karma Padhathi.</li>
+                        </ul>
+                      </p>
+                      <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="service-item bg-light rounded h-100 p-5">
+                      <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                        <img src="images\handshake icon.png" alt="Handshake" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                      </div>
+                      <h4 class="mb-3">Collaborate with Experts</h4>
+                      <p class="mb-4">
+                        <ul style="color: black;">
+                            <li>Engage with professionals from various fields, and the Kerala Institute of Local Administration (KILA).</li>
+                            <li>Network with engineers, designers, and environmental scientists.</li>
+                        </ul>
+                      </p>
+                      <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="service-item bg-light rounded h-100 p-5">
+                      <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                        <img src="images\plant-removebg-preview.png" alt="Plant" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                      </div>
+                      <h4 class="mb-3">Make a Difference</h4>
+                      <p class="mb-4">
+                        <ul style="color: black;">
+                            <li>Your ideas matter! Help shape the future of waste management and contribute to a cleaner, healthier planet.</li>
+                            <li>Work on practical solutions that align with the goals of the State government.</li>
+                        </ul>
+                      </p>
+                      <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <!-- Event highlights end -->
+
+  <!-- Why particiapte? -->
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="d-inline-block border rounded-pill py-1 px-4">Services</p> -->
+            <h1 style="color: white;">Why Participate?</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                      <img src="images\light-bulb-14.png" alt="Rocket" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h4 class="mb-3"> Diverse Talents Welcome</h4>
+                    <p class="mb-4">
+                      <ul style="color: black;">
+                          <li>Whether you're a coder, designer, engineer, scientist, or a concerned citizen, your unique perspective is vital in finding sustainable solutions.</li>
+                      </ul>
+                    </p>
+                    <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                      <img src="images\prize.png" alt="Handshake" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h4 class="mb-3">Recognition and Prizes</h4>
+                    <p class="mb-4">
+                      <ul style="color: black;">
+                          <li>Stand a chance to win exciting prizes and gain recognition for your innovative contributions.</li>
+                          <li>Showcase your skills and ideas to a wider audience.</li>
+                      </ul>
+                    </p>
+                    <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item bg-light rounded h-100 p-5">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                      <img src="images\global1.png" alt="Plant" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                    <h4 class="mb-3">Global Impact</h4>
+                    <p class="mb-4">
+                      <ul style="color: black;">
+                          <li>Be part of a global movement addressing one of the most critical environmental issues.</li>
+                          <li>Contribute to a cleaner and more sustainable future for Kerala and beyond.</li>
+                      </ul>
+                    </p>
+                    <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Why participate End -->
+
+<!-- Prob Statement Start-->
+<div class="problem-statement-container">
+  <div class="problem-statement">
+      <h3 style="text-transform: none;">Addressing the Challenge</h3>
+      <h2>SAFE AND SCIENTIFIC SOLID WASTE MANAGEMENT</h2> 
+      <p>Addressing the surge in waste generation requires innovative, sustainable solutions for safe disposal, recycling, and management. Our hackathon theme encourages participants to explore cutting-edge technologies, community initiatives, and policy interventions. By fostering a collective effort for practical, science-based solutions, we aim to contribute to a cleaner, healthier planet. Join us in envisioning a future where solid waste is managed with safety, efficiency, and environmental consciousness, paving the way for sustainability.</p>
+      <a class="cta-button" href="https://forms.gle/p1EtaRDeR3XCvYzb6">Join the Movement</a>
+  </div>
+</div>
+<!-- Prob Statement Start End-->
+
+    <!-- Event details, how to participate -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn animate__animated" data-wow-delay="0.5s">
+                <div class="participation-steps">
+                    <h1 class="mb-4">How to Participate?</h1>
+                    <ol>
+                        <li>
+                            <strong>Register:</strong> Secure your spot by registering for the hackathon.
+                        </li>
+                        <li>
+                            <strong>Form Teams:</strong> Collaborate with like-minded individuals or join a team during the event.
+                        </li>
+                        <li>
+                            <strong>Innovate:</strong> Dive into challenges, brainstorm ideas, and develop practical solutions.
+                        </li>
+                        <li>
+                            <strong>Present:</strong> Showcase your solutions to a panel of judges and stand a chance to win!
+                        </li>
+                    </ol>
+                </div>
+                <div class="get-involved-section">
+                    <h1 class="mb-4">Get Involved!</h1>
+                    <p class="mb-4">Ready to be part of the solution? Join us in driving positive change and creating a lasting impact on solid waste management. Together, let's make Kerala the cleanest state and contribute to a sustainable future for generations to come.</p>
+                    <a class="cta-button" href="https://forms.gle/p1EtaRDeR3XCvYzb6">Register Now</a>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn animate__animated d-flex align-items-center justify-content-center" data-wow-delay="0.1s">
+                <div class="image-container">
+                    <img class="img-fluid rounded w-100" src="images\participate.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Event details, how to participate End -->
+
         </div>
       </div>
     </section><!-- End About Section -->
+
+    
+
+
 <!--
         <!- - ======= Collaborators Section ======= - ->
         <section id="supporters" class="section-with-bg">
