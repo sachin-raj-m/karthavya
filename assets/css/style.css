@@ -478,7 +478,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/Jyothi_Latest.jpg) top center;
+  /* background: url(../img/Jyothi_Latest.jpg) top center; */
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -492,7 +492,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: white;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -521,7 +521,7 @@ h6 {
 }
 
 #hero h1 {
-  color: #fff;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
@@ -529,7 +529,7 @@ h6 {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #000000;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -540,7 +540,7 @@ h6 {
 }
 
 #hero h4 {
-  color: #fff;
+  color: #000000;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -553,7 +553,7 @@ h6 {
 }
 
 #hero p {
-  color: #ebebeb;
+  color: #000000;
   font-weight: 700;
   font-size: 20px;
 }
@@ -710,6 +710,64 @@ h6 {
   margin-bottom: 20px;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# About the event
+--------------------------------------------------------------*/
+
+h1.mb-4 {
+  color: white;
+}
+
+p.mb-4 {
+  color: black;
+}
+
+.problem-statement-container {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Increased transparency */
+  color: #000000;
+}
+
+.problem-statement {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.problem-statement h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.problem-statement p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000; 
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b30000;
+  color: #ffffff;
+}
+
+.custom-red-btn {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
 
 /*--------------------------------------------------------------
 # Speakers Section
