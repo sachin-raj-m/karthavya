@@ -492,7 +492,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: white;
+  background: rgba(6, 12, 34, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -521,7 +521,7 @@ h6 {
 }
 
 #hero h1 {
-  color: #000000;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
@@ -529,7 +529,7 @@ h6 {
 }
 
 #hero h2 {
-  color: #000000;
+  color: #fff;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -540,7 +540,7 @@ h6 {
 }
 
 #hero h4 {
-  color: #000000;
+  color: #fff;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -553,7 +553,7 @@ h6 {
 }
 
 #hero p {
-  color: #000000;
+  color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
 }
