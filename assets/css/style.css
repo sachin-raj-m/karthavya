@@ -726,7 +726,7 @@ p.mb-4 {
 .problem-statement-container {
   text-align: center;
   padding: 100px 20px;
-  background-color: rgba(255, 255, 255, 0.2); /* Increased transparency */
+  background-color: rgba(255, 255, 255, 0.2); 
   color: #000000;
 }
 
@@ -1164,6 +1164,327 @@ p.mb-4 {
     margin-top: 6px;
   }
 }
+
+/*--------------------------------------------------------------
+# Prizes Section
+--------------------------------------------------------------*/
+.prize-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-column {
+  width: 48%; 
+  padding: 20px;
+  margin: 10px;
+}
+
+.img-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-left: 0; 
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 400px;
+}
+
+.text-row {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  align-items: center; /* Center the image and text vertically */
+}
+
+.text-row img {
+  max-width: 30px; /* Adjust the maximum width of the images */
+  margin-right: 10px; /* Adjust the spacing between the image and text */
+}
+
+.text-column h1 {
+  font-size: 70px; /* Adjust the font size of the heading */
+}
+
+.text-column p {
+  font-size: 20px; /* Adjust the font size of the text rows */
+}
+
+.box {
+  display: flex;
+  align-items: center; /* Center the image and text vertically */
+  border: 1px solid #3498db; /* Border color */
+  border-radius: 8px; /* Border radius for rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+  background-color: #ffffff; /* Box background color */
+  margin-bottom: 15px; /* Adjust the margin between boxes */
+  width: 100%; /* Make boxes take the full width of the container */
+  padding: 10px;
+}
+
+.box img {
+  max-width: 30px; /* Adjust the maximum width of the images */
+  margin-right: 10px; /* Adjust the spacing between the image and text */
+}
+
+.custom-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: auto; /* Center the container */
+  margin-top: 20px;
+}
+
+.custom-item {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  margin-left: 10px; /* Adjust the spacing between the circle and text */
+}
+
+/* Add your custom styles for colors, fonts, etc. */
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.circle-number {
+  font-size: 20px; /* Adjust the font size of the number */
+}
+
+.container-fluid {
+  background-attachment: fixed;
+}
+
+/*--------------------------------------------------------------
+# Timeline Section
+--------------------------------------------------------------*/
+
+/* Reset some browser default styles */
+body {
+  font-family: 'K2D', sans-serif;
+  background: var(--body-bg);
+  letter-spacing: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --primary: #1d8cf8;
+  --secondary: #4f537b;
+  --info: #11cdef;
+  --success: #00bf9a;
+  --warning: #ff8d72;
+  --danger: #fd5d93;
+}
+
+/* Timeline variables */
+:root {
+  --body-bg: #1e1e2f;
+  --timeline-before-bg: #222a42;
+  --timeline-body-bg: #27293d;
+  --timeline-body-round: 3px;
+  --timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Page container */
+.timeline-container {
+  max-width: 650px;
+  margin: 50px auto;
+}
+
+/* Typography */
+p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Timeline style */
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: white;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--timeline-body-bg);
+}
+
+.timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline .timeline-icon {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: var(--secondary);
+}
+
+.timeline .timeline-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline .timeline-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.timeline .timeline-body {
+  background: var(--timeline-body-bg);
+  border-radius: var(--timeline-body-round);
+  padding: 20px 20px 15px;
+  box-shadow: var(--timeline-body-shadow);
+}
+
+.timeline .timeline-body:before {
+  content: '';
+  background: inherit;
+  width: 20px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+.timeline .timeline-body .timeline-title {
+  margin-bottom: 1.4rem;
+}
+
+.timeline .timeline-body .timeline-title .badge {
+  background: var(--secondary);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline .timeline-body .timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.4;
+  margin-top: 16px;
+  font-size: 11px;
+}
+
+/* Primary Timeline */
+.timeline.primary .badge,
+.timeline.primary .timeline-icon {
+  background: var(--primary) !important;
+}
+
+/* Info Timeline */
+.timeline.info .badge,
+.timeline.info .timeline-icon {
+  background: var(--info) !important;
+}
+
+/* Success Timeline */
+.timeline.success .badge,
+.timeline.success .timeline-icon {
+  background: var(--success) !important;
+}
+
+/* Warning Timeline */
+.timeline.warning .badge,
+.timeline.warning .timeline-icon {
+  background: var(--warning) !important;
+}
+
+/* Danger Timeline */
+.timeline.danger .badge,
+.timeline.danger .timeline-icon {
+  background: var(--danger) !important;
+}
+
+.author {
+  font-family: inherit;
+  padding: 3em;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.author a:link,
+.author a:visited {
+  color: white;
+  &:hover {
+      text-decoration: none;
+  }
+}
+
+.author .btn:link,
+.author .btn:visited {
+  margin-top: 1em;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: black;
+  padding: 1.5em 2rem;
+  border-radius: 1em;
+  transition: 0.5s all;
+}
+
+.author .btn:hover,
+.author .btn:focus,
+.author .btn:active {
+  background-color: lighten(black, 10%);
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Sponsors Section
